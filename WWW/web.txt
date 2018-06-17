@@ -1,0 +1,5 @@
+登入帳號  
+主機  web.nchu.edu.tw
+使用者名稱  cmchen
+密碼  cmc511chen
+連接埠  21

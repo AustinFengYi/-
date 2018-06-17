@@ -1,0 +1,297 @@
+/*CSS 基礎樣式設定*/
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+
+body {
+  padding: 0px;
+  margin: 0px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #333;
+  background-color: #f6f6f6;
+}
+
+
+* {
+  box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0px;
+  padding: 0px;
+}
+
+
+ul, ol {
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+a, a:hover, a:focus {
+  margin: 0px;
+  padding: 0px;
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+
+/*設定 Header -上導覽區塊的 CSS 樣式*/
+#header-primary{
+  position: absolute;
+  width: 100%;
+  top: 0 ;
+  right: 0;
+  left: 0;
+  background: #315990;
+   opacity: 0.9;
+
+   z-index: 100;
+}
+
+#logo{
+  float:left;
+  padding:10px 20px;
+}
+
+#logo img{
+  height: 50px;
+}
+
+.nav-primary{
+  float:right;
+}
+
+.nav-primary li{
+  display: inline-block;
+}
+
+.nav-primary li a{
+  color: black;
+  text-transform: capitalize;
+  display: block;
+  padding: 25px 12px;
+  letter-spacing: 1px;
+  font-size: 15px;
+  transition: .3s linear;
+}
+
+.nav-primary li a:hover{
+  color: #FDF5E6;
+  transition: .3s linear;
+}
+
+
+/*設定 Header -下導覽區塊的 CSS 樣式*/
+#header-secondary{
+  position: absolute;
+  right: 0;
+  left: 0;
+  top: 70px;
+  z-index: 100;
+  opacity: 0.8;
+  background-color:#990000;
+}
+
+
+.nav-secondary li{
+  display: inline-block;
+}
+
+.nav-secondary li a{
+  transition: .1s linear;  
+  color: #fff;
+  text-transform: capitalize;
+  display: block;
+  padding: 10px 20px 10px 10px;
+  font-size: 16px;
+}
+
+.nav-secondary li a:hover{
+  transition: .5s linear;
+  color: #000;
+  background: gray;
+}
+
+
+.nav-secondary ul{
+  margin: 0;
+  padding: 0;
+  position: absolute;
+}
+
+
+.nav-secondary ul li a:hover{
+  transition: .5s linear;
+  background: green;
+  color: #000;
+}
+
+.nav-secondary ul {
+  display: none;
+}
+
+.nav-secondary li:hover ul {
+ display: block;
+ background: green;
+}
+
+
+/*設定 內容頁面 banner Image的CSS 樣式*/
+.home-bg img{
+  height: 200px;
+}
+
+
+/*設定 content-demo的CSS 樣式內容 -->*/
+.content-demo  .content-background{
+  height: 210px;
+  position: absolute;
+  top: 160px;
+  left: 4%;
+  width: 92%;
+  background: -webkit-linear-gradient(left,#e4e5e7,#f1f2f3);
+  background: -o-linear-gradient(right,#e4e5e7,#f1f2f3);
+  background: -moz-linear-gradient(right,#e4e5e7,#f1f2f3);
+  background: linear-gradient(to right,#e4e5e7,#f1f2f3);
+  box-shadow: 1px 2px 2px 2px rgba(40,40,40,0.3);
+}
+
+.content-demo .content-background img{
+  max-height: 200px;
+  padding-top: 10px;
+  transition: all .7s linear;
+}
+
+
+/*設定 labnew的CSS 樣式*/
+.labnew{
+  padding-top: 430px;
+}
+
+.labnew h4{
+  opacity: 0.8;
+  background-color:#990000;
+  padding: 5px;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+
+.labnew ul.labnew-navigation{
+  background: -webkit-linear-gradient(left,#e4e5e7,#f1f2f3);
+  background: -o-linear-gradient(right,#e4e5e7,#f1f2f3);
+  background: -moz-linear-gradient(right,#e4e5e7,#f1f2f3);
+  background: linear-gradient(to right,#e4e5e7,#f1f2f3);
+  box-shadow: 1px 2px 2px 2px rgba(40,40,40,0.3);
+  display: inline-block;
+}
+
+.labnew ul.labnew-navigation li{
+  float: left;
+  padding: 10px;
+}
+
+.labnew ul.labnew-navigation li a{
+  color: #484c51;
+}
+
+.labnew ul.labnew-navigation li:hover{
+  transition: .3s linear;
+  background: #b9bcc0;
+}
+
+.labnew ul.labnew-navigation li:hover a{
+  color: #252627;
+}
+
+/*設定 內容 introduction的 CSS 樣式*/
+.introduction{
+  margin-top: 20px;
+}
+
+
+/*設定 footer的 CSS 樣式*/
+.footer{
+  margin-top: 10px;
+  background: -webkit-linear-gradient(#2F4F4F,  #4682B4 );
+  background: -o-linear-gradient(#2F4F4F, #4682B4 );
+  background: -moz-linear-gradient(#2F4F4F, #4682B4 );
+  background: linear-gradient(#2F4F4F,  #4682B4 );  
+}
+
+
+.footer-title{
+  padding-top: 15px;
+  padding-bottom: 5px;
+  padding-left:15px;
+}
+
+.footer-title h4{
+  letter-spacing: 1px;
+  color: #F5FFFA;
+}
+
+.footer-item h3,h5{
+  color: #F5FFFA;
+}
+
+.footer-item h5{
+  padding: 5px 0;
+}
+
+.footer-item hr{
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+
+
+.footer-item{
+  float: left;
+  width: 33%;
+  padding: 15px;
+}
+
+.footer-item img{
+  padding: 5px 0 15px 0;
+}
+
+.footer-item .item-left,.item-right{
+  float: left;
+  width: 50%;
+}
+
+.footer-item .item-left img,.item-right img{
+  width: 30%;
+  display: inline-block;
+  border-radius: 50%;
+}
+
+.footer-item .item h5{
+  display: inline-block;
+}
+
+.footer-item .item img,h5{
+  padding:10px 10px;
+}
+
+.footer-item .item h5:hover{
+  color: gray;
+}
+
+.footer-content .footer-copyright{
+  padding: 20px;
+  color: #f6f6f6;
+  letter-spacing: 1px;
+  font-size: 15px;
+}
+
+
