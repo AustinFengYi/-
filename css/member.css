@@ -249,9 +249,6 @@ img {
   margin-top: 20px;
 }
 
-.member .panel{
-  margin-left: -30px;
-}
 
 .member .panel .panel-body{
   min-height: 150px;
@@ -260,7 +257,6 @@ img {
 .member h4,.table-item{
   color: #000;
   margin-bottom: 10px;
-  margin-left: -30px;
 }
 
 /*設定 footer的 CSS 樣式*/
